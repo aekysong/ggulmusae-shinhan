@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontlight</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="row_text_small" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontlight</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    <style name="row_text_small_gray" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontlight</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="row_text_mid_gray" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontlight</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="row_text_big" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontmedium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="row_text_big_red" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontmedium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="row_text_big_blue" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontmedium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+</resources>
