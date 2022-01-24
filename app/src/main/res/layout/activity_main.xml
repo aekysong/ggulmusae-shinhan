@@ -15,10 +15,12 @@
         android:orientation="vertical"
         android:background="@color/colorWhite">
         <androidx.cardview.widget.CardView
+            android:id="@+id/card"
             android:layout_width="match_parent"
             android:layout_height="170dp"
             android:layout_margin="10dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            android:onClick="onClick">
 
             <ImageView
                 android:layout_width="match_parent"
