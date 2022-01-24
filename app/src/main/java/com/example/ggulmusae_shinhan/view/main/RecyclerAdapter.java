@@ -5,12 +5,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ggulmusae_shinhan.R;
 import com.example.ggulmusae_shinhan.model.TradeModel;
+import com.example.ggulmusae_shinhan.view.MainBottomSheet;
 
 import java.util.ArrayList;
 
@@ -59,6 +61,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
             priceTv = (TextView) view.findViewById(R.id.row_tv_price_per_one);
             countTv = (TextView) view.findViewById(R.id.row_tv_count);
             profitTv = (TextView) view.findViewById(R.id.row_tv_profit);
+
+            view.setOnClickListener(v -> {
+                MainBottomSheet bottomSheet = new MainBottomSheet();
+                bottomSheet.show(((MainActivity)context).getSupportFragmentManager(), "MainBottomSheet");
+            });
         }
     }
 }

@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.ggulmusae_shinhan.R;
 
 public class MainFragment extends Fragment {
-    private Fragment1Listener listener;
+    // private Fragment1Listener listener;
     private RecyclerView recyclerView;
     private RecyclerAdapter recyclerAdapter;
     private int fragNum;
@@ -37,9 +37,9 @@ public class MainFragment extends Fragment {
         return rootView;
     }
 
+    /**
     public interface Fragment1Listener{
         void onInputSent(String sector, String stockName, Double amount, Double rate);
-
-        // 여기서 바텀시트 처리.
     }
+    */
 }

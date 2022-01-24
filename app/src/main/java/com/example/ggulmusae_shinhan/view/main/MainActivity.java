@@ -9,6 +9,9 @@ import android.view.View;
 
 import com.example.ggulmusae_shinhan.PopupActivity;
 import com.example.ggulmusae_shinhan.R;
+import com.example.ggulmusae_shinhan.view.MainBottomSheet;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
