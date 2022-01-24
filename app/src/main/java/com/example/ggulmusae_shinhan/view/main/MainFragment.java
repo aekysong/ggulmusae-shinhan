@@ -1,4 +1,4 @@
-package com.example.ggulmusae_shinhan.main;
+package com.example.ggulmusae_shinhan.view.main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ggulmusae_shinhan.R;
 
-public class Fragment1 extends Fragment {
+public class MainFragment extends Fragment {
     private Fragment1Listener listener;
     private RecyclerView recyclerView;
     private RecyclerAdapter recyclerAdapter;

@@ -1,4 +1,4 @@
-package com.example.ggulmusae_shinhan.main;
+package com.example.ggulmusae_shinhan.view.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -9,7 +9,7 @@ import com.example.ggulmusae_shinhan.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
-    private Fragment1 fragment1, fragment2, fragment3;
+    private MainFragment fragment1, fragment2, fragment3;
     private TabLayout tabs;
 
     @Override
@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void initTab() {
-        fragment1 = new Fragment1();
-        fragment2 = new Fragment1();
-        fragment3 = new Fragment1();
+        fragment1 = new MainFragment();
+        fragment2 = new MainFragment();
+        fragment3 = new MainFragment();
 
         getSupportFragmentManager().beginTransaction().add(R.id.container,fragment1).commit();
 

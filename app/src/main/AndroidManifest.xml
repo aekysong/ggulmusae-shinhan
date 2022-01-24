@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_bird_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity android:name=".view.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".main.MainActivity"></activity>
+        <activity android:name=".view.main.MainActivity"></activity>
     </application>
 
 </manifest>

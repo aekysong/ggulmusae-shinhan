@@ -48,4 +48,24 @@
         <item name="android:fontStyle">normal</item>
         <item name="android:textColor">@color/colorBlue</item>
     </style>
+
+    <style name="row_text_mid_white" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontmedium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="row_text_mid_blue_bold" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontbold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="row_text_mid_black_bold" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontbold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
 </resources>

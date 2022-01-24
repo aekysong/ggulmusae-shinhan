@@ -6,23 +6,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".main.MainActivity">
+    tools:context=".view.main.MainActivity">
 
     <!-- 상단 -->
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_margin="10dp"
-        app:cardCornerRadius="10dp">
-
-        <ImageView
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite">
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/blur_back"
-            android:scaleType="fitXY"
-            android:contentDescription="BACK" />
+            android:layout_height="170dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
 
-    </androidx.cardview.widget.CardView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/blur_back"
+                android:scaleType="fitXY"
+                android:contentDescription="BACK" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bird"
+                    android:scaleType="fitCenter"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="당신은 "
+                        style="@style/row_text_mid_white"/>
+                    <TextView
+                        android:id="@+id/user_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사지말"
+                        style="@style/row_text_mid_black_bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="껄무새"
+                        style="@style/row_text_mid_blue_bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 입니다."
+                        style="@style/row_text_mid_white"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="\n하지만 후회는 아직 이릅니다.\n오늘도 껄무새 탈출을 위해 화이팅!"
+                    style="@style/row_text_mid_white"/>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
 
 
     <!-- TAB -->
@@ -33,8 +91,10 @@
         android:id="@+id/tabs"
         app:tabMode="fixed"
         app:tabGravity="fill"
-        app:tabTextAppearance="@style/tab_text" />
+        app:tabTextAppearance="@style/tab_text"
+        android:background="@color/colorWhite"/>
 
+    <!-- FRAME -->
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"

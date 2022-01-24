@@ -1,4 +1,4 @@
-package com.example.ggulmusae_shinhan.main;
+package com.example.ggulmusae_shinhan.view.main;
 
 import android.content.Context;
 import android.view.LayoutInflater;
