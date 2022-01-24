@@ -22,7 +22,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
     // 프레그먼트 번호에 따라 다른 더미데이터가 생기도록 함.
     RecyclerAdapter(Context context, int fragNum){
         this.context = context;
-        list = TradeModel.createTradeDummyData(fragNum);
+        list = TradeModel.createTradeDummyData(this.context, fragNum);
     }
 
     @NonNull
