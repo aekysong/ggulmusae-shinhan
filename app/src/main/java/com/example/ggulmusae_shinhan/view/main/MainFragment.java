@@ -17,6 +17,11 @@ public class MainFragment extends Fragment {
     private Fragment1Listener listener;
     private RecyclerView recyclerView;
     private RecyclerAdapter recyclerAdapter;
+    private int fragNum;
+
+    MainFragment(int num){
+        fragNum = num;
+    }
 
     @Nullable
     @Override
@@ -25,7 +30,7 @@ public class MainFragment extends Fragment {
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.frag_list);
         recyclerView.setHasFixedSize(true);
-        recyclerAdapter = new RecyclerAdapter(getActivity(), 1);
+        recyclerAdapter = new RecyclerAdapter(getActivity(), fragNum);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(recyclerAdapter);
 
@@ -35,5 +40,6 @@ public class MainFragment extends Fragment {
     public interface Fragment1Listener{
         void onInputSent(String sector, String stockName, Double amount, Double rate);
 
+        // 여기서 바텀시트 처리.
     }
 }

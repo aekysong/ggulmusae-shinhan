@@ -38,9 +38,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
         holder.dateTv.setText(list.get(pos).getDate());
         holder.marketTv.setText(list.get(pos).getMarket());
         holder.nameTv.setText(list.get(pos).getName());
-//        holder.priceTv.setText(list.get(pos).getPrice());   // 원 붙이기
-//        holder.countTv.setText(list.get(pos).getCount());   // *N주
-//        holder.profitTv.setText(list.get(pos).getProfit()); // 원 붙이기
+        holder.priceTv.setText(list.get(pos).getPrice());   // 원 붙이기
+        holder.countTv.setText(list.get(pos).getCount());   // *N주
+        holder.profitTv.setText(list.get(pos).getProfit()); // 원 붙이기
     }
 
     @Override

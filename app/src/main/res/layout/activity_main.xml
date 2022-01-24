@@ -85,19 +85,24 @@
 
     <!-- TAB -->
     <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
         app:tabMaxWidth="0dp"
-        android:id="@+id/tabs"
         app:tabMode="fixed"
         app:tabGravity="fill"
         app:tabTextAppearance="@style/tab_text"
-        android:background="@color/colorWhite"/>
+        app:tabIndicatorColor="@color/colorBlue"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorGravity="bottom"
+        app:tabRippleColor="@null"/>
 
     <!-- FRAME -->
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray">
     </FrameLayout>
 </LinearLayout>

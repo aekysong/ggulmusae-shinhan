@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void initTab() {
-        fragment1 = new MainFragment();
-        fragment2 = new MainFragment();
-        fragment3 = new MainFragment();
+        fragment1 = new MainFragment(1);
+        fragment2 = new MainFragment(2);
+        fragment3 = new MainFragment(3);
 
         getSupportFragmentManager().beginTransaction().add(R.id.container,fragment1).commit();
 
