@@ -5,11 +5,9 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
-import android.widget.TextView;
 
 public class PopupActivity extends Activity {
 
-    TextView txtText;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
