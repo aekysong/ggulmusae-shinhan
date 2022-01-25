@@ -21,20 +21,30 @@ public class TradeModel {
     String date = "2021/01/24";
     String market = "KOSPI";
     String name = "신한지주";
+    String sector = "금융업";
+    String tradeType = "매수";
+    String investType = "사지말껄";
     int price = 3250;
     int count = 7;
     int profit = -12500;
+    int tradePriceAfterN = 0;
+    int profitPerStock = 0;
     DecimalFormat formatter = new DecimalFormat("#,###,###,###,###");
 
     TradeModel(){}
 
-    TradeModel(String date, String market, String name, int price, int count, int profit){
+    TradeModel(String date, String market, String name, String sector, String tradeType, String investType, int price, int count, int profit, int tradePriceAfterN, int profitPerStock){
         this.date = date;
         this.market = market;
         this.name = name;
         this.price = price;
         this.count = count;
         this.profit = profit;
+        this.sector = sector;
+        this.tradePriceAfterN = tradePriceAfterN;
+        this.investType = investType;
+        this.tradeType = tradeType;
+        this.profitPerStock = profitPerStock;
     }
 
     public String getCount() {
@@ -46,7 +56,7 @@ public class TradeModel {
     }
 
     public String getProfit() {
-        return formatter.format(profit)+"원";
+        return formatter.format(Math.abs(profit))+"원";
     }
 
     public String getDate() {
@@ -59,6 +69,26 @@ public class TradeModel {
 
     public String getName() {
         return name;
+    }
+
+    public String getTradePriceAfterN() {
+        return formatter.format(tradePriceAfterN)+"원";
+    }
+
+    public String getInvestType() {
+        return investType+"!!";
+    }
+
+    public String getTradeType() {
+        return tradeType;
+    }
+
+    public String getSector() {
+        return sector;
+    }
+
+    public String getProfitPerStock() {
+        return formatter.format(profitPerStock)+"원";
     }
 
     private static ArrayList<HashMap<String, String>> readCsvData(Context context) {
@@ -115,21 +145,57 @@ public class TradeModel {
             case 1:
                 for (HashMap<String, String> row : dummyDb) {
                     if (row.get("invest_type").equals("사지말껄")) {
-                        data.add(new TradeModel(row.get("trade_date"),row.get("market"),row.get("stock"),Integer.parseInt(row.get("trade_price")),Integer.parseInt(row.get("count")),Integer.parseInt(row.get("profit_per_stock"))));
+                        data.add(new TradeModel(
+                                row.get("trade_date"),
+                                row.get("market"),
+                                row.get("stock"),
+                                row.get("sector"),
+                                row.get("trade_type"),
+                                row.get("invest_type"),
+                                Integer.parseInt(row.get("trade_price")),
+                                Integer.parseInt(row.get("count")),
+                                Integer.parseInt(row.get("total_profit")),
+                                Integer.parseInt(row.get("trade_price_after_n")),
+                                Integer.parseInt(row.get("profit_per_stock")))
+                        );
                     }
                 }
                 break;
             case 2:
                 for (HashMap<String, String> row : dummyDb) {
                     if (row.get("invest_type").equals("팔지말껄")) {
-                        data.add(new TradeModel(row.get("trade_date"),row.get("market"),row.get("stock"),Integer.parseInt(row.get("trade_price")),Integer.parseInt(row.get("count")),Integer.parseInt(row.get("profit_per_stock"))));
+                        data.add(new TradeModel(
+                                row.get("trade_date"),
+                                row.get("market"),
+                                row.get("stock"),
+                                row.get("sector"),
+                                row.get("trade_type"),
+                                row.get("invest_type"),
+                                Integer.parseInt(row.get("trade_price")),
+                                Integer.parseInt(row.get("count")),
+                                Integer.parseInt(row.get("total_profit")),
+                                Integer.parseInt(row.get("trade_price_after_n")),
+                                Integer.parseInt(row.get("profit_per_stock")))
+                        );
                     }
                 }
                 break;
             case 3:
                 for (HashMap<String, String> row : dummyDb) {
                     if (row.get("invest_type").equals("잘했어")) {
-                        data.add(new TradeModel(row.get("trade_date"),row.get("market"),row.get("stock"),Integer.parseInt(row.get("trade_price")),Integer.parseInt(row.get("count")),Integer.parseInt(row.get("profit_per_stock"))));
+                        data.add(new TradeModel(
+                                row.get("trade_date"),
+                                row.get("market"),
+                                row.get("stock"),
+                                row.get("sector"),
+                                row.get("trade_type"),
+                                row.get("invest_type"),
+                                Integer.parseInt(row.get("trade_price")),
+                                Integer.parseInt(row.get("count")),
+                                Integer.parseInt(row.get("total_profit")),
+                                Integer.parseInt(row.get("trade_price_after_n")),
+                                Integer.parseInt(row.get("profit_per_stock")))
+                        );
                     }
                 }
                 break;

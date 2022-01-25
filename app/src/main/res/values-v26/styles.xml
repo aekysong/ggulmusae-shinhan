@@ -62,6 +62,13 @@
         <item name="android:textColor">@color/colorBlue</item>
     </style>
 
+    <style name="row_text_big_bold_red" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontbold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
     <style name="row_text_big_red" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="android:fontFamily">@font/fontmedium</item>
         <item name="android:textSize">15sp</item>
@@ -87,6 +94,13 @@
         <item name="android:textSize">14sp</item>
         <item name="android:fontStyle">normal</item>
         <item name="android:textColor">@color/colorBlue</item>
+    </style>
+
+    <style name="row_text_mid_red_bold" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontbold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorRed</item>
     </style>
 
     <style name="row_text_mid_black_bold" parent="@android:style/TextAppearance.Widget.TabWidget">

@@ -9,6 +9,7 @@
     android:background="@color/colorLightGray">
 
 
+    <!-- 거래 날짜 및 시장 업종 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,6 +17,7 @@
         android:layout_marginTop="10dp"
         android:layout_gravity="center">
         <TextView
+            android:id="@+id/bs_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2022/01/25 11:00:23"
@@ -24,14 +26,23 @@
             android:layout_width="5dp"
             android:layout_height="match_parent"/>
         <TextView
+            android:id="@+id/bs_market"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="KOSPI 서비스업"
+            android:text="KOSPI"
+            style="@style/row_text_small_gray"/>
+
+        <TextView
+            android:id="@+id/bs_sector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서비스업"
             style="@style/row_text_small_gray"/>
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/bs_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NAVER"
@@ -61,9 +72,10 @@
             android:layout_marginStart="15dp">
 
             <TextView
+                android:id="@+id/bs_regret"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="그때 안샀으면"
+                android:text="그때 안 샀으면"
                 style="@style/row_text_mid2"/>
 
             <LinearLayout
@@ -73,6 +85,7 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
+                    android:id="@+id/bs_total_profit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="45,000원 "
@@ -89,6 +102,7 @@
 
 
         <TextView
+            android:id="@+id/bs_invest_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="사지말껄!!"
@@ -107,12 +121,20 @@
         android:paddingHorizontal="10dp">
 
         <TextView
+            android:id="@+id/bs_date2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2021년 12월 25일 "
+            android:text="2021년 12월 25일"
             style="@style/row_text_mid2"/>
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            style="@style/row_text_mid2"/>
+
+        <TextView
+            android:id="@+id/bs_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="400,000원"
@@ -125,6 +147,7 @@
             style="@style/row_text_mid2"/>
 
         <TextView
+            android:id="@+id/bs_trade_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="매수"
@@ -132,6 +155,7 @@
             android:layout_marginEnd="10dp"/>
 
         <TextView
+            android:id="@+id/bs_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="*1주"
@@ -152,6 +176,7 @@
             style="@style/row_text_mid2"/>
 
         <TextView
+            android:id="@+id/bs_price_after_n"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="355,000원"
@@ -159,6 +184,7 @@
             android:layout_marginEnd="15dp"/>
 
         <TextView
+            android:id="@+id/bs_profit_per_stock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-45,000원"
@@ -176,15 +202,6 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-<!--            <ImageView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="100dp"-->
-<!--                android:scaleType="centerCrop"-->
-<!--                android:src="@drawable/blur_back"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"/>-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -313,15 +330,6 @@ NAVER가 포함된 KOSPI 서비스업 섹터는 평균적으로 하락하는 국
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-<!--            <ImageView-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="80dp"-->
-<!--                android:scaleType="centerCrop"-->
-<!--                android:src="@drawable/blur_back7"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"/>-->
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -43,6 +43,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
         holder.priceTv.setText(list.get(pos).getPrice());   // 원 붙이기
         holder.countTv.setText(list.get(pos).getCount());   // *N주
         holder.profitTv.setText(list.get(pos).getProfit()); // 원 붙이기
+
+        holder.view.setOnClickListener(v -> {
+            MainBottomSheet bottomSheet = new MainBottomSheet(list.get(position));  // Bottom Sheet 로 현재 Row가 가진 데이터 넘김
+            bottomSheet.show(((MainActivity)context).getSupportFragmentManager(), "MainBottomSheet");
+        });
     }
 
     @Override
@@ -52,20 +57,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
 
     public class Holder extends RecyclerView.ViewHolder{
         public TextView dateTv, marketTv, nameTv, priceTv, countTv, profitTv;
+        public View view;
 
         public Holder(View view){
             super(view);
+            this.view = view;
             dateTv = (TextView) view.findViewById(R.id.row_tv_date);
             marketTv = (TextView) view.findViewById(R.id.row_tv_market);
             nameTv = (TextView) view.findViewById(R.id.row_tv_name);
             priceTv = (TextView) view.findViewById(R.id.row_tv_price_per_one);
             countTv = (TextView) view.findViewById(R.id.row_tv_count);
             profitTv = (TextView) view.findViewById(R.id.row_tv_profit);
-
-            view.setOnClickListener(v -> {
-                MainBottomSheet bottomSheet = new MainBottomSheet();
-                bottomSheet.show(((MainActivity)context).getSupportFragmentManager(), "MainBottomSheet");
-            });
         }
     }
 }
