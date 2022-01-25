@@ -68,4 +68,5 @@
         <item name="android:fontStyle">normal</item>
         <item name="android:textColor">@color/colorBlack</item>
     </style>
+
 </resources>
