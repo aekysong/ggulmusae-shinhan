@@ -1,5 +1,6 @@
 package com.example.ggulmusae_shinhan;
 
+import android.Manifest;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -7,6 +8,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 
 public class PopupActivity extends Activity {
 
@@ -33,9 +35,7 @@ public class PopupActivity extends Activity {
             case 1:
                 imageview_celebrity.setImageResource(R.drawable.charles);
                 textview_celebrity.setText("찰스 멍거");
-//            case 2:
-//                imageview_celebrity.setImageResource(R.drawable.peter);
-//                textview_celebrity.setText("피터 린치");
+
         }
 
 
