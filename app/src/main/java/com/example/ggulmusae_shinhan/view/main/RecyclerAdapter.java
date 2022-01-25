@@ -21,6 +21,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
     Context context;
     ArrayList<TradeModel> list;
 
+
     // 프레그먼트 번호에 따라 다른 더미데이터가 생기도록 함.
     RecyclerAdapter(Context context, int fragNum){
         this.context = context;
@@ -62,9 +63,15 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
             countTv = (TextView) view.findViewById(R.id.row_tv_count);
             profitTv = (TextView) view.findViewById(R.id.row_tv_profit);
 
-            view.setOnClickListener(v -> {
-                MainBottomSheet bottomSheet = new MainBottomSheet();
-                bottomSheet.show(((MainActivity)context).getSupportFragmentManager(), "MainBottomSheet");
+            nameTv.setSelected(true);
+
+            view.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View view) {
+                                            MainBottomSheet bottomSheet = new MainBottomSheet();
+                                            bottomSheet.show(((MainActivity)context).getSupportFragmentManager(), "MainBottomSheet");
+                                        }
+
             });
         }
     }
