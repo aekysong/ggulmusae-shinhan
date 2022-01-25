@@ -51,12 +51,14 @@ public class MainBottomSheet extends BottomSheetDialogFragment {
             ((TextView)view.findViewById(R.id.bs_invest_type)).setTextAppearance(R.style.row_text_big_bold_red);
             ((TextView)view.findViewById(R.id.bs_total_profit)).setTextAppearance(R.style.row_text_mid_red_bold);
             ((TextView)view.findViewById(R.id.bs_profit_per_stock)).setTextAppearance(R.style.row_text_mid_red_bold);
+            ((TextView)view.findViewById(R.id.bs_advise)).setText("흔들리지 않고 시장을 관망하는 자세를 가져보는건 어떨까요?");
         }
         else if(data.getInvestType().equals("사지말껄!!")){
             ((TextView)view.findViewById(R.id.bs_regret)).setText("그때 안 샀으면");
             ((TextView)view.findViewById(R.id.bs_invest_type)).setTextAppearance(R.style.row_text_big_bold_blue);
             ((TextView)view.findViewById(R.id.bs_total_profit)).setTextAppearance(R.style.row_text_mid_blue_bold);
             ((TextView)view.findViewById(R.id.bs_profit_per_stock)).setTextAppearance(R.style.row_text_mid_blue_bold);
+            ((TextView)view.findViewById(R.id.bs_advise)).setText("때가 올 때까지 기다리는 자가 승리한다고 합니다. 다음에는 조금 신중하게 매수하는 것이 어떨까요?");
         }
 
 

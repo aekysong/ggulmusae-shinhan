@@ -196,7 +196,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="3dp">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -240,9 +241,7 @@
                     android:id="@+id/bs_analyze"
                     style="@style/row_text_mid3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="NAVER는 매수날짜 이후로 10일간 꾸준히 하락했습니다.\n
-NAVER가 포함된 KOSPI 서비스업 섹터는 평균적으로 하락하는 국면입니다." />
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -254,7 +253,8 @@ NAVER가 포함된 KOSPI 서비스업 섹터는 평균적으로 하락하는 국
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
-        android:layout_marginVertical="15dp">
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="3dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -292,10 +292,11 @@ NAVER가 포함된 KOSPI 서비스업 섹터는 평균적으로 하락하는 국
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/bs_advise"
                     style="@style/row_text_mid3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="악재에 대한 더 기민하고 빠른 판단이 필요합니다. " />
+                    android:text="" />
 
 
             </LinearLayout>

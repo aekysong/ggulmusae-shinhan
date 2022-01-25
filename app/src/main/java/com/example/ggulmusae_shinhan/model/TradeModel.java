@@ -107,7 +107,7 @@ public class TradeModel {
                 .append("는(은) ").append(getTradeType())
                 .append("날짜 이후로 10일간 꾸준히 ").append(getSectorTendency()).append("했습니다.\n")
                 .append(getName()).append("가(이) 포함된 ").append(getMarket()).append(" ").append(getSector())
-                .append("는 평균적으로 ").append(getSectorTendency()).append("하는 국면입니다.");
+                .append("는(은) 평균적으로 ").append(getSectorTendency()).append("하는 국면입니다.");
 
         return sb.toString();
     }
