@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -88,13 +88,13 @@
                     android:id="@+id/bs_total_profit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="45,000원 "
+                    android:text="45,000원"
                     style="@style/row_text_mid_blue_bold"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="이득인데 ㅠㅠ"
+                    android:text=" 이득인데 ㅠㅠ"
                     style="@style/row_text_mid2"/>
 
             </LinearLayout>
@@ -237,10 +237,11 @@
 
 
                 <TextView
+                    android:id="@+id/bs_analyze"
                     style="@style/row_text_mid3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="NAVER는 매수날짜 이후로 10일간 꾸준히 하락했습니다.
+                    android:text="NAVER는 매수날짜 이후로 10일간 꾸준히 하락했습니다.\n
 NAVER가 포함된 KOSPI 서비스업 섹터는 평균적으로 하락하는 국면입니다." />
 
                 <!--<LinearLayout

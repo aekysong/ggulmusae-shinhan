@@ -88,7 +88,11 @@ public class TradeModel {
     }
 
     public String getProfitPerStock() {
-        return formatter.format(profitPerStock)+"원";
+        StringBuffer sb = new StringBuffer();
+        if(profitPerStock > 0)
+            sb.append("+");
+        sb.append(formatter.format(profitPerStock)).append("원");
+        return sb.toString();
     }
 
     private static ArrayList<HashMap<String, String>> readCsvData(Context context) {

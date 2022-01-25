@@ -83,6 +83,13 @@
         <item name="android:textColor">@color/colorBlue</item>
     </style>
 
+    <style name="row_text_big_yellow" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/fontmedium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontStyle">normal</item>
+        <item name="android:textColor">@color/colorYellow</item>
+    </style>
+
     <style name="row_text_mid_white" parent="@android:style/TextAppearance.Widget.TabWidget">
         <item name="android:fontFamily">@font/fontmedium</item>
         <item name="android:textSize">14sp</item>

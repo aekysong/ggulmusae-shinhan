@@ -9,5 +9,6 @@
     <color name="colorGray">#777</color>
     <color name="colorLightGray">#F7F9FA</color>
     <color name="colorRed">#FF0000</color>
-    <color name="colorYellow">#FCF4D9</color>
+    <color name="colorBeige">#FCF4D9</color>
+    <color name="colorYellow">#FFC700</color>
 </resources>
