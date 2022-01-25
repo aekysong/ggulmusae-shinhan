@@ -115,21 +115,21 @@ public class TradeModel {
             case 1:
                 for (HashMap<String, String> row : dummyDb) {
                     if (row.get("invest_type").equals("사지말껄")) {
-                        data.add(new TradeModel(row.get("trade_date"),row.get("market"),row.get("stock"),Integer.parseInt(row.get("trade_price")),Integer.parseInt(row.get("count")),Integer.parseInt(row.get("profit"))));
+                        data.add(new TradeModel(row.get("trade_date"),row.get("market"),row.get("stock"),Integer.parseInt(row.get("trade_price")),Integer.parseInt(row.get("count")),Integer.parseInt(row.get("profit_per_stock"))));
                     }
                 }
                 break;
             case 2:
                 for (HashMap<String, String> row : dummyDb) {
                     if (row.get("invest_type").equals("팔지말껄")) {
-                        data.add(new TradeModel(row.get("trade_date"),row.get("market"),row.get("stock"),Integer.parseInt(row.get("trade_price")),Integer.parseInt(row.get("count")),Integer.parseInt(row.get("profit"))));
+                        data.add(new TradeModel(row.get("trade_date"),row.get("market"),row.get("stock"),Integer.parseInt(row.get("trade_price")),Integer.parseInt(row.get("count")),Integer.parseInt(row.get("profit_per_stock"))));
                     }
                 }
                 break;
             case 3:
                 for (HashMap<String, String> row : dummyDb) {
                     if (row.get("invest_type").equals("잘했어")) {
-                        data.add(new TradeModel(row.get("trade_date"),row.get("market"),row.get("stock"),Integer.parseInt(row.get("trade_price")),Integer.parseInt(row.get("count")),Integer.parseInt(row.get("profit"))));
+                        data.add(new TradeModel(row.get("trade_date"),row.get("market"),row.get("stock"),Integer.parseInt(row.get("trade_price")),Integer.parseInt(row.get("count")),Integer.parseInt(row.get("profit_per_stock"))));
                     }
                 }
                 break;
