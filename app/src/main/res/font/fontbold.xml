@@ -4,7 +4,7 @@
 
     <font
         android:fontStyle="normal"
-        android:fontWeight="700"
+        android:fontWeight="500"
         android:font="@font/bold"/>
 
 </font-family>
