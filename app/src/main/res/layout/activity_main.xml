@@ -60,6 +60,7 @@
                         android:text="사지말"
                         style="@style/row_text_mid_black_bold"/>
                     <TextView
+                        android:id="@+id/user_color"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="껄무새"
@@ -71,16 +72,16 @@
                         style="@style/row_text_mid_white"/>
                 </LinearLayout>
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="\n하지만 후회는 아직 이릅니다.\n오늘도 껄무새 탈출을 위해 화이팅!"
-                    style="@style/row_text_mid_white"/>
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="\n하지만 후회는 아직 이릅니다.\n오늘도 껄무새 탈출을 위해 화이팅!"
+    style="@style/row_text_mid_white"/>
 
-            </LinearLayout>
+</LinearLayout>
 
 
-        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
     </LinearLayout>
 
     <!-- TAB -->

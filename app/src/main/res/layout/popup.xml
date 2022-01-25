@@ -24,13 +24,14 @@
             android:onClick="OnClick">
         </ImageView>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
             android:scaleType="centerInside"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/arrow">
@@ -46,7 +47,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                style="@style/row_text_mid_black_bold"
                 android:textSize="20sp"
                 android:id="@+id/cal"
                 android:text="사지말"
@@ -54,15 +55,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
                 android:textSize="20sp"
                 android:text="껄무새"
                 android:id="@+id/ggul"
-                android:textColor="@color/colorBlue"
+                style="@style/row_text_mid_blue_bold"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/tab_text"
                 android:textSize="20sp"
                 android:text="를 위한"
                 />
@@ -76,14 +77,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
+                android:id="@+id/celebrity_name"
+                style="@style/row_text_mid_black_bold"
                 android:textSize="20sp"
-                android:id="@+id/celebrity"
                 android:text="워렌 버핏"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                style="@style/tab_text"
                 android:textSize="20sp"
                 android:text="의 투자 조언"
                 />
@@ -92,29 +94,86 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp">
 
             <ImageView
                 android:layout_width="250dp"
-                android:layout_height="388dp"
+                android:layout_height="250dp"
                 android:scaleType="centerInside"
+                android:id="@+id/celebrity_image"
                 android:src="@drawable/warren1" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
 
             <Button
-                android:layout_height="wrap_content"
-                android:layout_width="260dp"
-                android:onClick="OnClick"
+                android:paddingLeft="20dp"
                 android:id="@+id/share"
+                style="@style/row_text_mid_white"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/radius"
+                android:drawableLeft="@drawable/share_icon_xml"
+                android:onClick="OnClick"
                 android:text="결과 공유하기"
-                android:textColor="@color/colorWhite"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/go_invest_plus"
+                android:onClick="OnClick"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/radius_white">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/go_investment"
+                    android:paddingRight="20dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="더 후회 없는 투자를 위해서"
+                        style="@style/row_text_small"
+                        android:textSize="15sp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="투자플러스"
+                            style="@style/row_text_mid_black_bold"
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 사용해보기"
+                            style="@style/tab_text"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
         </LinearLayout>
     </LinearLayout>
 
