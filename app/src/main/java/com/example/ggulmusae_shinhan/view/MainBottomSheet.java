@@ -45,7 +45,7 @@ public class MainBottomSheet extends BottomSheetDialogFragment {
         ((TextView)view.findViewById(R.id.bs_price_after_n)).setText(data.getTradePriceAfterN());
         ((TextView)view.findViewById(R.id.bs_total_profit)).setText(data.getProfit());
         ((TextView)view.findViewById(R.id.bs_profit_per_stock)).setText(data.getProfitPerStock());
-
+        ((TextView)view.findViewById(R.id.bs_analyze)).setText(data.getAnalyze());
         if(data.getInvestType().equals("팔지말껄!!")){
             ((TextView)view.findViewById(R.id.bs_regret)).setText("그때 안 팔았으면");
             ((TextView)view.findViewById(R.id.bs_invest_type)).setTextAppearance(R.style.row_text_big_bold_red);

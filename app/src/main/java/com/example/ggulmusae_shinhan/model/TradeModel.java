@@ -24,6 +24,7 @@ public class TradeModel {
     String sector = "금융업";
     String tradeType = "매수";
     String investType = "사지말껄";
+    String sectorTendency = "하락";
     int price = 3250;
     int count = 7;
     int profit = -12500;
@@ -33,7 +34,7 @@ public class TradeModel {
 
     TradeModel(){}
 
-    TradeModel(String date, String market, String name, String sector, String tradeType, String investType, int price, int count, int profit, int tradePriceAfterN, int profitPerStock){
+    TradeModel(String date, String market, String name, String sector, String tradeType, String investType, String sectorTendency, int price, int count, int profit, int tradePriceAfterN, int profitPerStock){
         this.date = date;
         this.market = market;
         this.name = name;
@@ -45,6 +46,7 @@ public class TradeModel {
         this.investType = investType;
         this.tradeType = tradeType;
         this.profitPerStock = profitPerStock;
+        this.sectorTendency = sectorTendency;
     }
 
     public String getCount() {
@@ -92,6 +94,21 @@ public class TradeModel {
         if(profitPerStock > 0)
             sb.append("+");
         sb.append(formatter.format(profitPerStock)).append("원");
+        return sb.toString();
+    }
+
+    public String getSectorTendency() {
+        return sectorTendency;
+    }
+
+    public String getAnalyze(){
+        StringBuffer sb = new StringBuffer();
+        sb.append(getName())
+                .append("는(은) ").append(getTradeType())
+                .append("날짜 이후로 10일간 꾸준히 ").append(getSectorTendency()).append("했습니다.\n")
+                .append(getName()).append("가(이) 포함된 ").append(getMarket()).append(" ").append(getSector())
+                .append("는 평균적으로 ").append(getSectorTendency()).append("하는 국면입니다.");
+
         return sb.toString();
     }
 
@@ -156,6 +173,7 @@ public class TradeModel {
                                 row.get("sector"),
                                 row.get("trade_type"),
                                 row.get("invest_type"),
+                                row.get("sector_tendency"),
                                 Integer.parseInt(row.get("trade_price")),
                                 Integer.parseInt(row.get("count")),
                                 Integer.parseInt(row.get("total_profit")),
@@ -175,6 +193,7 @@ public class TradeModel {
                                 row.get("sector"),
                                 row.get("trade_type"),
                                 row.get("invest_type"),
+                                row.get("sector_tendency"),
                                 Integer.parseInt(row.get("trade_price")),
                                 Integer.parseInt(row.get("count")),
                                 Integer.parseInt(row.get("total_profit")),
@@ -194,6 +213,7 @@ public class TradeModel {
                                 row.get("sector"),
                                 row.get("trade_type"),
                                 row.get("invest_type"),
+                                row.get("sector_tendency"),
                                 Integer.parseInt(row.get("trade_price")),
                                 Integer.parseInt(row.get("count")),
                                 Integer.parseInt(row.get("total_profit")),
